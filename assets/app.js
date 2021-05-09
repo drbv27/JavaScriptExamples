@@ -7,6 +7,8 @@
 
 //Soluciones:
 
+//--------------------------------------------------------------------------------------------
+
 //E1S1.Solucion Simple:
 function myFunction(datos){
     console.log(datos.length);
@@ -23,6 +25,14 @@ function myFunction2(datos){
     }
 }
 myFunction2(20); //Aquí introduje un número, prueba a ingresar el string u otro tipo de datos.
+
+//--------------------------------------------------------------------------------------------
+
+//E2S1.Solución Simple
+function myFunction3(datos,tamaño){
+    console.log(datos.slice(0,tamaño))
+}
+myFunction3("Hola Mundo", 4);
 
 //--------------------------------------------------------------------------------------------
 
