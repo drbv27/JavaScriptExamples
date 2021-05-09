@@ -26,6 +26,36 @@ function myFunction2(datos){
 }
 myFunction2(20); //Aquí introduje un número, prueba a ingresar el string u otro tipo de datos.
 
+//E1S3.Otra solución
+function contarCaracteres(cadena=""){
+    if (!cadena) {
+        console.warn("No ingresate ningun Texto")
+    } else {
+        console.info(`La cadena "${cadena}", tiene:
+        ${cadena.length} caracteres.`)
+    }
+}
+contarCaracteres("Hola Mundo");
+
+//E1S4. Con funcion Expresada
+const contarC = function(cadena=""){
+    if (!cadena) {
+        console.warn("No ingresate ningun Texto")
+    } else {
+        console.info(`La cadena "${cadena}", tiene:
+        ${cadena.length} caracteres.`)
+    }
+}
+contarC("Otra prueba mas");
+
+//E1S5. Con arrow funtion y Operador ternario
+const contarCar = (cadena="") =>
+(!cadena)
+    ?console.warn("No ingresate ningun Texto")
+    :console.info(`La cadena "${cadena}", tiene: ${cadena.length} caracteres.`)
+
+contarCar("Una ultima vez")
+
 //--------------------------------------------------------------------------------------------
 
 //E2S1.Solución Simple
