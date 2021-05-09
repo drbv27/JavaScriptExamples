@@ -4,3 +4,25 @@
 3.Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter. Ejemplo: miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
 4.Programa una función que repita un texto X veces. Ejemplo: miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
 */
+
+//Soluciones:
+
+//E1S1.Solucion Simple:
+function myFunction(datos){
+    console.log(datos.length);
+}
+myFunction("Hola Mundo");
+
+//E1S2.Validando tipo de datos
+function myFunction2(datos){
+    if(typeof datos === 'string'){
+        console.log(datos.length);
+    } else {
+        console.log(`Error:
+        Debes introducir una cadena de texto, introdujiste un: "${typeof datos}" `)
+    }
+}
+myFunction2(20); //Aquí introduje un número, prueba a ingresar el string u otro tipo de datos.
+
+//--------------------------------------------------------------------------------------------
+
