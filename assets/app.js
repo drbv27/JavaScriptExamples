@@ -48,7 +48,7 @@ const contarC = function(cadena=""){
 }
 contarC("Otra prueba mas");
 
-//E1S5. Con arrow funtion y Operador ternario
+//E1S5. Con arrow function y Operador ternario
 const contarCar = (cadena="") =>
 (!cadena)
     ?console.warn("No ingresate ningun Texto")
@@ -63,6 +63,34 @@ function myFunction3(datos,tamaño){
     console.log(datos.slice(0,tamaño))
 }
 myFunction3("Hola Mundo", 4);
+
+//E2S2. Con Funcion Expresada y validacion
+const recortarTexto = function(cadena="", longitud=undefined){
+    if (!cadena) {
+        console.warn("No ingresaste ningun Texto")
+    } else {
+        console.info(cadena.slice(0,longitud))
+    }
+} 
+recortarTexto("Recortando un texto",10);
+
+//E2S3 Con arrow function y Operador ternario
+const recortarT = (cadena="", longitud=undefined) =>
+(!cadena)
+    ?console.warn("No ingresaste ningun Texto")
+    :console.info(cadena.slice(0,longitud))
+
+recortarT("Otro Texto más", 5);
+
+//Mejorando el arrow Function con mas validaciones
+const recortarTo = (cadena="", longitud=undefined) =>
+(!cadena)
+    ?console.warn("No ingresaste ningun Texto")
+    :(longitud===undefined)
+        ? console.warn("No ingresaste una longitud a recortar")
+        : console.info(cadena.slice(0,longitud))
+    
+recortarTo("Ultima Prueba", 5);
 
 //--------------------------------------------------------------------------------------------
 
