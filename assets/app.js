@@ -129,3 +129,32 @@ function myFunction5(datos,iterador){
     }
 }
 myFunction5("Hola Mundo",4);
+
+//E4S2 Function Expression
+ const cuantoRepite = function(cadena="",veces=undefined){
+    if (!cadena) {
+        console.log("No digitaste ningun texto")
+    } else {
+        if (veces===undefined) {
+            console.log("No digitaste el numero de veces")
+        } else {
+            for (let index = 0; index < veces; index++) {
+                console.log(index+1,cadena)  //solo pongo el index el console.log a modo de enumeracion en consola, pero no es necesario
+            }
+        }
+    }
+ }
+ cuantoRepite("Repitamos",5);
+
+ //E4S3 ArrowFunction
+ const repetirTexto = (cadena="",veces=undefined) =>{
+    if (!cadena) return console.warn("No ingresaste Texto.")
+
+    if (veces===undefined) return console.info("No ingresaste cuantas veces vas a repetir")
+
+    for (let index = 0; index < veces; index++) {
+        console.log(index+1,cadena)  
+    }
+ }
+
+ repetirTexto("Vamos a Repetir",3);
