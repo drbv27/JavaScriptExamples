@@ -10,6 +10,8 @@
 //--------------------------------------------------------------------------------------------
 
 //E1S1.Solucion Simple:
+console.log("Ejercicio 1:")
+console.log("-----------------------------------------------------------------------------------")
 function myFunction(datos){
     console.log(datos.length);
 }
@@ -59,6 +61,8 @@ contarCar("Una ultima vez")
 //--------------------------------------------------------------------------------------------
 
 //E2S1.Solución Simple
+console.log("Ejercicio 2:")
+console.log("-----------------------------------------------------------------------------------")
 function myFunction3(datos,tamaño){
     console.log(datos.slice(0,tamaño))
 }
@@ -95,6 +99,8 @@ recortarTo("Ultima Prueba", 5);
 //--------------------------------------------------------------------------------------------
 
 //E3S1.Solución Simple
+console.log("Ejercicio 3:")
+console.log("-----------------------------------------------------------------------------------")
 function myFunction4(datos,separador){
     arreglo = datos.split(separador);//tambien podrias llevarlo directamente al console.log sin crear variable
     console.log(arreglo);
@@ -123,6 +129,8 @@ const separarT2 = (datos="", separador=undefined) =>
 //--------------------------------------------------------------------------------------------
 
 //E4S1.Solucion Simple
+console.log("Ejercicio 4:")
+console.log("-----------------------------------------------------------------------------------")
 function myFunction5(datos,iterador){
     for (let index = 0; index < iterador; index++) {
         console.log(index+1,datos)  //solo pongo el index el console.log a modo de enumeracion en consola, pero no es necesario
