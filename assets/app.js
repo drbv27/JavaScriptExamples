@@ -119,7 +119,7 @@ const separarT2 = (datos="", separador=undefined) =>
             ? console.info("No ingresaste un separador")
             : console.info(datos.split(separador))
         
-    separarT2("Un texto mas para separar", " ")
+    separarT2("Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo", ",")
 //--------------------------------------------------------------------------------------------
 
 //E4S1.Solucion Simple
