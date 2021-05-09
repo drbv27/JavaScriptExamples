@@ -101,6 +101,25 @@ function myFunction4(datos,separador){
 }
 myFunction4("Hola como estas?"," ");
 
+//E3S2.Funcion Expresada y validacion
+const separarTexto = function(datos="", separador=undefined){
+    if (!datos) {
+        console.warn("No ingresaste ningun Texto")
+    } else {
+        console.info(datos.split(separador))
+    }
+}
+separarTexto("Separemos este texto", " ")
+
+//E3S3.Con arrow function-operdaor ternario-y mejor validacion
+const separarT2 = (datos="", separador=undefined) =>
+    (!datos)
+        ? console.warn("No ingresaste ningun Texto")
+        : (separador===undefined)
+            ? console.info("No ingresaste un separador")
+            : console.info(datos.split(separador))
+        
+    separarT2("Un texto mas para separar", " ")
 //--------------------------------------------------------------------------------------------
 
 //E4S1.Solucion Simple
