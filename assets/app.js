@@ -36,3 +36,9 @@ myFunction3("Hola Mundo", 4);
 
 //--------------------------------------------------------------------------------------------
 
+//E3S1.Solución Simple
+function myFunction4(datos,separador){
+    arreglo = datos.split(separador);//tambien podrias llevarlo directamente al console.log sin crear variable
+    console.log(arreglo);
+}
+myFunction4("Hola como estas?"," ");
