@@ -42,3 +42,13 @@ function myFunction4(datos,separador){
     console.log(arreglo);
 }
 myFunction4("Hola como estas?"," ");
+
+//--------------------------------------------------------------------------------------------
+
+//E4S1.Solucion Simple
+function myFunction5(datos,iterador){
+    for (let index = 0; index < iterador; index++) {
+        console.log(index+1,datos)  //solo pongo el index el console.log a modo de enumeracion en consola, pero no es necesario
+    }
+}
+myFunction5("Hola Mundo",4);
